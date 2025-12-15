@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc4pidl52nqje"]
+
+[ext_resource type="PackedScene" uid="uid://bwhwkc12o0ti6" path="res://scenes/flow_back.tscn" id="1_onsc2"]
+[ext_resource type="PackedScene" uid="uid://btr5inm52t7e7" path="res://scenes/car.tscn" id="2_dv33r"]
+
+[node name="MainGame" type="Node2D"]
+
+[node name="FlowBack" parent="." instance=ExtResource("1_onsc2")]
+
+[node name="Car" parent="." instance=ExtResource("2_dv33r")]
+position = Vector2(480, 608)
