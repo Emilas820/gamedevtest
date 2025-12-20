@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bwhwkc12o0ti6" path="res://scenes/flow_back.tscn" id="1_onsc2"]
 [ext_resource type="PackedScene" uid="uid://btr5inm52t7e7" path="res://scenes/car.tscn" id="2_dv33r"]
 [ext_resource type="Script" path="res://scripts/cupcake_maker.gd" id="3_ao5gu"]
-[ext_resource type="PackedScene" uid="uid://di2gmt14f6r6v" path="res://scenes/score_board.tscn" id="4_gcrlm"]
+[ext_resource type="PackedScene" uid="uid://dgg1no4uryg2h" path="res://scenes/score_board.tscn" id="4_gcrlm"]
 
 [node name="MainGame" type="Node2D"]
 

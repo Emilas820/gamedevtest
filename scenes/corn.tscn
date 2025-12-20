@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://brik66p3adqnh"]
+[gd_scene load_steps=4 format=3 uid="uid://cx7eptrjwaffx"]
 
 [ext_resource type="Script" path="res://scripts/corn_cd.gd" id="1_tju0d"]
-[ext_resource type="Texture2D" uid="uid://bsawo6jk5dv4l" path="res://assets/cone.png" id="2_c35ai"]
+[ext_resource type="Texture2D" uid="uid://bsawo6jk5dv4l" path="res://assets/corn.png" id="2_c35ai"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3iq8e"]
 size = Vector2(64, 66)
