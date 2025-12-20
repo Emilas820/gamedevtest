@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://brik66p3adqnh"]
+
+[ext_resource type="Script" path="res://scripts/corn_cd.gd" id="1_tju0d"]
+[ext_resource type="Texture2D" uid="uid://bsawo6jk5dv4l" path="res://assets/cone.png" id="2_c35ai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3iq8e"]
+size = Vector2(64, 66)
+
+[node name="Corn" type="Area2D"]
+script = ExtResource("1_tju0d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 31)
+shape = SubResource("RectangleShape2D_3iq8e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+scale = Vector2(4, 4)
+texture = ExtResource("2_c35ai")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bc4pidl52nqje"]
+[gd_scene load_steps=5 format=3 uid="uid://bc4pidl52nqje"]
 
 [ext_resource type="PackedScene" uid="uid://bwhwkc12o0ti6" path="res://scenes/flow_back.tscn" id="1_onsc2"]
 [ext_resource type="PackedScene" uid="uid://btr5inm52t7e7" path="res://scenes/car.tscn" id="2_dv33r"]
+[ext_resource type="Script" path="res://scripts/cupcake_maker.gd" id="3_ao5gu"]
+[ext_resource type="PackedScene" uid="uid://di2gmt14f6r6v" path="res://scenes/score_board.tscn" id="4_gcrlm"]
 
 [node name="MainGame" type="Node2D"]
 
@@ -9,3 +11,15 @@
 
 [node name="Car" parent="." instance=ExtResource("2_dv33r")]
 position = Vector2(480, 608)
+
+[node name="object_maker" type="Node" parent="."]
+script = ExtResource("3_ao5gu")
+
+[node name="Timer" type="Timer" parent="object_maker"]
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreBoard" parent="CanvasLayer" instance=ExtResource("4_gcrlm")]
+
+[connection signal="timeout" from="object_maker/Timer" to="object_maker" method="_on_timer_timeout"]
